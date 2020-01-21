@@ -25,7 +25,7 @@ RUN apt-get update \
     && apt-get -y install git iproute2 procps lsb-release sudo \
 
     # Python packages
-    && pip --disable-pip-version-check --no-cache-dir install pylint mypy ipython jupyter \
+    && pip --disable-pip-version-check --no-cache-dir install pylint mypy pytest ipython jupyter \
     && mkdir -p /usr/local/share/pip-global \
     && chown ${USERNAME}:root /usr/local/share/pip-global \
 
